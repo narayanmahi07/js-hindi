@@ -44,6 +44,30 @@ console.log(typeof outsideTemp);
 
 
 
+// stack (primitive), heap (non - primitive)
+
+let myname = "Narayan"
+
+let anothername = myname
+anothername = "mahi"
+
+console.log(myname);
+console.log(anothername);
+
+let user = {
+   
+  email:"naru@google.com",
+   upi :"user@ybl"
+
+}
+
+let usertwo = user
+
+usertwo.email ="mahi@google.com"
+
+console.log(user.email);
+console.log(usertwo.email);
+
 
 
 
@@ -75,6 +99,10 @@ console.log(typeof outsideTemp);
 - array, object, function overview 
 
 - typeof datatyped is available on documentation */
+
+
+
+
 
 
 /*   [ stack and heap memory ]
