@@ -30,7 +30,7 @@ const obj4 ={5:"a", 6:"b"}
 //const obj3 = Object.assign({},obj1,obj2,obj4);   //const returnedTarget = Object.assign(target, source);
 
 const obj3 ={...obj1,...obj2}
-console.log(obj3);
+//console.log(obj3);
 
 
 const users =  {
@@ -39,14 +39,61 @@ const users =  {
 }
 
 //users[1].email
-console.log(tinderuser);
+//console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
-
-
-console.log(tinderuser.hasOwnProperty('islogged'));
+//console.log(Object.keys(tinderuser));
+//console.log(Object.values(tinderuser));
+//console.log(Object.entries(tinderuser));
 
 
+//console.log(tinderuser.hasOwnProperty('islogged'));
 
+
+
+const course ={
+    coursename: "js hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+//course.courseInstructor
+
+const {courseInstructor:instructor} = course
+
+//console.log(courseInstructor);
+
+console.log(instructor);
+
+
+//{
+//    "name ":"NARAYAN",
+//    "coursename": "js",
+//   "price": "free"
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// destructring in react 
+const navbar = ({company})  => {
+
+}
+
+navbar(company = "narayan")
