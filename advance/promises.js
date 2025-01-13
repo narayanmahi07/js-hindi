@@ -57,3 +57,58 @@ console.log(username);
 }).catch(function(error) {
     console.log(error);
 }).finally(() => console.log("the promise is either resolved or rejected"))
+
+
+
+const promise5  = new Promise(function(resolve,reject) {
+    setTimeout(function() {
+        let error = true;
+        if(!error) {
+            resolve({username: "Narayan",password:"777"})
+        } else {
+            reject('ERROR: Something went wrong')
+        }
+},1000)
+})
+
+async function consumepromise5() {
+   try{
+    const response = await promise5
+    console.log(response)
+   } catch(error){
+         console.log(error);
+   }
+}
+
+// consumepromise5()
+
+
+// async function getallUser() {
+//    try{
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//    //console.log(response);
+//      const data = await response.json()
+//      console.log(data);
+//    } catch(error) {
+//     console.log("E:",Error);
+//    }
+
+// }
+
+// getallUser()
+
+
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+fetch('https://api.github.com/users/hiteshchoudhary')
+
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
+
+
+
